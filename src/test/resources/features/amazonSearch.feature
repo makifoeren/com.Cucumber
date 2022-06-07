@@ -21,3 +21,14 @@ Feature:Amazon Search
     And Testergebnisse enthalten iphone
     And schließt die Seite
 
+  Scenario: T04 Nutzer sucht bei Laptop nach iphone
+
+    Given Benutzer auf der Amazon-Homepage
+    Then Testen Sie, ob Sie auf die Amazon-Seite gehen
+    Then Benutzer sucht nach Laptop
+    And Testergebnisse enthalten Laptop
+    And Klicken Sie auf ein Produkt
+    And Testergebnisse enthalten Produkt
+    And Produkt in den Warenkorb legent
+    And Prüfung hinzugefügt
+    And schließt die Seite

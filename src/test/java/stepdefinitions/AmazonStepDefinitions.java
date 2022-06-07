@@ -62,5 +62,46 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(amazonPage.anzahlderErgebnisse.getText().contains("iphone"));
 
     }
+
+    @Then("Testen Sie, ob Sie auf die Amazon-Seite gehen")
+    public void testen_sie_ob_sie_auf_die_amazon_seite_gehen() {
+        Assert.assertTrue(amazonPage.homePageTest.isDisplayed());
+
     }
+
+    @Then("Benutzer sucht nach Laptop")
+    public void benutzer_sucht_nach_laptop() {
+        amazonPage.suchbox.sendKeys("Laptop"+Keys.ENTER);
+
+    }
+    @Then("Testergebnisse enthalten Laptop")
+    public void testergebnisse_enthalten_laptop() {
+        Assert.assertTrue(amazonPage.anzahlderErgebnisse.getText().contains("Laptop"));
+
+    }
+    @Then("Klicken Sie auf ein Produkt")
+    public void klicken_sie_auf_ein_produkt() {
+        amazonPage.klickProdukt.click();
+
+    }
+    @Then("Testergebnisse enthalten Produkt")
+    public void testergebnisse_enthalten_produkt() {
+        Assert.assertTrue(amazonPage.erhaltenProduktTest.isDisplayed());
+
+    }
+    @Then("Produkt in den Warenkorb legent")
+    public void produkt_in_den_warenkorb_legent() {
+        amazonPage.warenkorbLegent.click();
+
+    }
+    @Then("Prüfung hinzugefügt")
+    public void prüfung_hinzugefügt() {
+
+        Assert.assertTrue(amazonPage.hinzugefügtTest.isDisplayed());
+
+    }
+
+
+
+}
 
