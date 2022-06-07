@@ -102,6 +102,37 @@ public class AmazonStepDefinitions {
     }
 
 
+    @Then("Benutzer sucht nach {string}")
+    public void benutzerSuchtNach(String gewünschtesWort) {
+        amazonPage.suchbox.sendKeys(gewünschtesWort+Keys.ENTER);
+        
+    }
 
+    @And("Testergebnisse enthalten {string}")
+    public void testergebnisseEnthalten(String gewünschtesWort) {
+        Assert.assertTrue(amazonPage.anzahlderErgebnisse.getText().contains(gewünschtesWort));
+
+    }
+
+    @Given("kullanici {string} anasayfasinda") //amazonUrl
+    public void kullaniciAnasayfasinda(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+
+    @And("url'in {string} icerdigini test eder")
+    public void urlInIcerdiginiTestEder(String istenenKelime) {
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+
+        Assert.assertTrue(actualUrl.contains(istenenKelime));
+    }
+
+    @Then("kullanici {int} sn bekler")
+    public void kullaniciSnBekler(int istenenSaniye) {
+        try {
+            Thread.sleep(istenenSaniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
