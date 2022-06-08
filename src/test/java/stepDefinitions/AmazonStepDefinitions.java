@@ -1,17 +1,13 @@
-package stepdefinitions;
+package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.Keys;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-
-
-import java.io.IOException;
 
 public class AmazonStepDefinitions {
 
@@ -133,6 +129,20 @@ public class AmazonStepDefinitions {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    @Then("kullanici {string} icin arama yapar")
+    public void kullaniciIcinAramaYapar(String istenenKelime) {
+        amazonPage.suchbox.sendKeys(istenenKelime+Keys.ENTER);
+
+    }
+
+    @Then("sonuclarin {string} icerdigini test eder")
+    public void sonuclarinIcerdiginiTestEder(String istenenKelime) {
+        String actualText = amazonPage.anzahlderErgebnisse.getText();
+        String expectedText = istenenKelime;
+
+        Assert.assertTrue(actualText.contains(expectedText));
     }
 }
 

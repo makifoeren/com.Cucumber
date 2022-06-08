@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "stepdefinitions",
+        glue = "stepDefinitions",
         tags = "@wip",
         dryRun = true
 )
