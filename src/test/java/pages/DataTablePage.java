@@ -13,22 +13,31 @@ public class DataTablePage {
 
     @FindBy(xpath = "//span[contains(text(),'New')]")
     public WebElement newButonunaBasar;
+
     @FindBy(xpath = "//input[@id='DTE_Field_first_name']")
     public WebElement firstName;
+
     @FindBy(xpath = "//input[@id='DTE_Field_last_name']")
     public WebElement lastName;
+
     @FindBy(xpath = "//input[@id='DTE_Field_position']")
     public WebElement position;
+
     @FindBy(xpath = "//input[@id='DTE_Field_office']")
     public WebElement office;
+
     @FindBy(xpath = "//input[@id='DTE_Field_extn']")
     public WebElement extn;
+
     @FindBy(xpath = "//input[@id='DTE_Field_start_date']")
     public WebElement startDate;
+
     @FindBy(xpath = "//input[@id='DTE_Field_salary']")
     public WebElement salary;
+
     @FindBy(xpath = "//button[contains(text(),'Create')]")
     public WebElement create;
+
     @FindBy(xpath = "//input[@type='search']")
     public WebElement search;
 
