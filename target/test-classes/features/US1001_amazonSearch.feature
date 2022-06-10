@@ -2,7 +2,7 @@
 @tumu
 Feature:US1001 kullanici Amazon Search sayfasinda arama yapar
 
-  @nutella @ikisi
+  @nutella
   Scenario: T01 Nutzer sucht bei Amazon nach Nutella
 
     Given Benutzer auf der Amazon-Homepage
@@ -10,13 +10,14 @@ Feature:US1001 kullanici Amazon Search sayfasinda arama yapar
     And Testergebnisse enthalten Nutella
     And schließt die Seite
 
-  @java @ikisi
+  @java
   Scenario: T02 Nutzer sucht bei Amazon nach Java
 
     Given Benutzer auf der Amazon-Homepage
     Then Benutzer sucht nach Java
     And Testergebnisse enthalten Java
     And schließt die Seite
+
   @iphone
   Scenario: T03 Nutzer sucht bei Amazon nach iphone
 
