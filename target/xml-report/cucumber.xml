@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="60.432">
-    <testcase classname="US1010 herokuapp Delete testi" name="TC15 herokuapp dan delete butonu calismali" time="27.569">
-        <system-out>
-            <![CDATA[Given kullanici "herokuApp" anasayfasinda...................................passed
-And add element butonuna basar..............................................passed
-Then Delete butonu gorunur oluncaya kadar bekler............................passed
-And Delete butonunun gorunur oldugunu test edin.............................passed
-Then Delete butonuna basar..................................................passed
-And Delete butonunun gorunmedigini test edin................................passed
-And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1012 kullanici register yapabilmeli" name="TC17 kullanici uygun data larla register olabilmeli" time="32.392">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.837">
+    <testcase classname="US1012 kullanici register yapabilmeli" name="TC17 kullanici uygun data larla register olabilmeli" time="43.159">
         <system-out>
             <![CDATA[Given kullanici "automationUrl" anasayfasinda...............................passed
 And user sign in linkine tiklar.............................................passed

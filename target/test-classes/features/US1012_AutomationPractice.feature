@@ -1,5 +1,5 @@
 Feature: US1012 kullanici register yapabilmeli
-  @auto @ikisi
+  @auto
   Scenario: TC17 kullanici uygun data larla register olabilmeli
 
 
