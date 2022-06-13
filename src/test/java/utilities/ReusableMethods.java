@@ -30,7 +30,7 @@ public class ReusableMethods {
         // full path to the screenshot location
         String target = System.getProperty("user.dir") + "/target/Screenshots/" + name + date + ".png";
         File finalDestination = new File(target);
-        // save the screenshot to the path given
+        // save the screenshot to the path given..
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
