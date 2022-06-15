@@ -1,5 +1,6 @@
 Feature:US1013 Kullanici excel bilgilerine ulasir
 
+  @exc
   Scenario:TC18 kullanici excel bilgilerini kullanir
 
   Given kullanici excel dosyayi kullanilabilir hale getirelim

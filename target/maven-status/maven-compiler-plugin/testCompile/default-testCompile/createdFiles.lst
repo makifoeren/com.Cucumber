@@ -3,7 +3,6 @@ stepDefinitions\AmazonStepDefinitions.class
 utilities\ReusableMethods$1.class
 pages\GuruPage.class
 stepDefinitions\DataTableStepDefinitions.class
-runners\TestRunner1$TestRunner.class
 runners\TestRunner1.class
 pages\NinjaPage.class
 stepDefinitions\HerOkuAppDefinitions.class

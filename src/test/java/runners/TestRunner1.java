@@ -4,24 +4,28 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
+
+@RunWith(Cucumber.class)
+
+@CucumberOptions(
+        plugin={"html:target/cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"},
+        features = "src/test/resources/features",
+        glue = "stepDefinitions",
+        tags = "@hmc" ,
+        dryRun = false
+)
+
 public class TestRunner1 {
 
-    @RunWith(Cucumber.class)
-
-    @CucumberOptions(
-            plugin={"html:target/cucumber-reports.html",
-                    "json:target/json-reports/cucumber.json",
-                    "junit:target/xml-report/cucumber.xml"},
-            features = "src/test/resources/features",
-            glue = "stepDefinitions",
-            tags = "@hmc",
-            dryRun = false
-    )
-
-    public class TestRunner {
+    public TestRunner1() {
 
 
-    /*
+
+
+
+/*
     Bir framework te bir tek Runner class i yeterli olabilir
     Runner class inda class icerisinde hic bir sey olmaz
     Runner classin da iki onmeli notasyon vardir
