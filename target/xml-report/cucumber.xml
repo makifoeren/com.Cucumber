@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="38.279">
-    <testcase classname="US1012 kullanici register yapabilmeli" name="TC17 kullanici uygun data larla register olabilmeli" time="37.482">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.775">
+    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 Nutzer sucht bei Amazon nach Nutella" time="26.366">
         <system-out>
-            <![CDATA[Given kullanici "automationUrl" anasayfasinda...............................passed
-And user sign in linkine tiklar.............................................passed
-And user Create and account bolumune email adresi girer.....................passed
-And Create an Account butonuna basar........................................passed
-And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
-And user Register butonuna basar............................................passed
-Then hesap olustugunu dogrular..............................................passed
-And sayfayi kapatir.........................................................passed
+            <![CDATA[Given Benutzer auf der Amazon-Homepage......................................passed
+Then Benutzer sucht nach "Nutella"..........................................passed
+And Testergebnisse enthalten "Nutella"......................................passed
+And schließt die Seite......................................................passed
 ]]>
         </system-out>
-    </testcase>
-</testsuite>
- Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
-	at stepDefinitions.HMCStepDefinitions.gecerli_username_girer(HMCStepDefinitions.java:21)
-	at ✽.gecerli username girer(file:///C:/Users/Dell/IdeaProjects/com.CucumberCalismam/src/test/resources/features/US1005_hotelMycampPositiveLogin.feature:8)
-]]>
-        </failure>
     </testcase>
 </testsuite>
