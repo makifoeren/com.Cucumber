@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.775">
-    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 Nutzer sucht bei Amazon nach Nutella" time="26.366">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.705">
+    <testcase classname="Selenium Grid" name="TC01 Running Chrome" time="0.174">
         <system-out>
-            <![CDATA[Given Benutzer auf der Amazon-Homepage......................................passed
-Then Benutzer sucht nach "Nutella"..........................................passed
-And Testergebnisse enthalten "Nutella"......................................passed
-And schließt die Seite......................................................passed
+            <![CDATA[* kullanici medunna sayfasina gider.........................................passed
+* sayfa tittle "MEDUNNA" oldugunu test eder.................................passed
+* remote driver kapatir.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Selenium Grid" name="TC01 Running Chrome 2" time="0.015">
+        <system-out>
+            <![CDATA[* kullanici firefox medunna sayfasina gider.................................passed
+* sayfa tittle "MEDUNNA" oldugunu test eder.................................passed
+* remote driver kapatir.....................................................passed
 ]]>
         </system-out>
     </testcase>
