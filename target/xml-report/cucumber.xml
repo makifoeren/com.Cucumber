@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.705">
-    <testcase classname="Selenium Grid" name="TC01 Running Chrome" time="0.174">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="1.638">
+    <testcase classname="Selenium Grid" name="TC01 Running Chrome" time="0.336">
         <system-out>
             <![CDATA[* kullanici medunna sayfasina gider.........................................passed
 * sayfa tittle "MEDUNNA" oldugunu test eder.................................passed
@@ -8,7 +8,7 @@
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Selenium Grid" name="TC01 Running Chrome 2" time="0.015">
+    <testcase classname="Selenium Grid" name="TC01 Running Chrome 2" time="0.005">
         <system-out>
             <![CDATA[* kullanici firefox medunna sayfasina gider.................................passed
 * sayfa tittle "MEDUNNA" oldugunu test eder.................................passed

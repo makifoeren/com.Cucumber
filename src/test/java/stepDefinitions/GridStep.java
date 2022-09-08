@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class GridStep {
-
+//java -jar selenium-server-4.4.0.jar standalone
     WebDriver driver;
 
     @Given("kullanici medunna sayfasina gider")
